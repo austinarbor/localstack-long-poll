@@ -6,6 +6,12 @@ plugins {
 group 'dev.aga'
 version '1.0.0-SNAPSHOT'
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
 application {
     mainClass = 'dev.aga.Main'
 }
